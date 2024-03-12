@@ -5,6 +5,8 @@ import bcrypt from "bcryptjs"
 
 export const POST = async (request) => {
     const {username, email, password, confirmPassword} = await request.json()
+    console.log(password)
+    console.log(confirmPassword)
 
     if (password !== confirmPassword) {
         return new NextResponse(JSON.stringify({error: "Password do not mathc"}, {status: 400}))
