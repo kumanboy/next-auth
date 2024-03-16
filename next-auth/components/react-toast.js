@@ -1,13 +1,14 @@
-'use client'
+"use client";
 
-import {ToastContainer} from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-function ReactToast(){
-    return(
+function ReactToast() {
+    return (
         <div>
-            <ToastContainer/>
+            <ToastContainer />
         </div>
-    )
+    );
 }
 
-export default ReactToast
+export default ReactToast;
